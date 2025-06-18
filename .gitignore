@@ -11,6 +11,9 @@ logs/
 # Ignore Minecraft crash reports (if you copy any)
 crash-reports/
 
+# Ignore the folder where the file backups are
+/backups/
+
 # Ignore OS files
 .DS_Store
 Thumbs.db
