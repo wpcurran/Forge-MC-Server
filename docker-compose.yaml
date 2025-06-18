@@ -8,5 +8,6 @@ services:
     environment:
       EULA: "TRUE"
       VERSION: "snapshot"
+      MEMORRY: "12G"
     volumes:
       - ./data:/data

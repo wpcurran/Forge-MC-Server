@@ -1,5 +1,9 @@
-# Ignore world data
-data/
+# Ignore everything in data folder
+data/*
+
+# But NOT server.properties
+!data/server.properties
+
 
 # Ignore logs (if you later map a logs volume)
 logs/
