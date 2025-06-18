@@ -1,0 +1,12 @@
+# Ignore world data
+data/
+
+# Ignore logs (if you later map a logs volume)
+logs/
+
+# Ignore Minecraft crash reports (if you copy any)
+crash-reports/
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
