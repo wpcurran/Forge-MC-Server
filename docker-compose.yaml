@@ -1,13 +1,16 @@
 version: "3.8"
 
 services:
-  minecraft:
-    image: itzg/minecraft-server
+  forge-minecraft:
+    image: itzg/minecraft-server:latest
     ports:
-      - "25565:25565"
+      - "25566:25565" # adjust port mapping accordingly if using multiple servers
     environment:
       EULA: "TRUE"
-      VERSION: "snapshot"
-      MEMORRY: "12G"
+      TYPE: "FORGE" # adjust the mod type
+      VERSION: "1.20.1"  # adjust to match your mods
+      FORGE_VERSION: "47.1.0"  # optional, can auto-detect from VERSION
+      MEMORY: "8G" # adjust the memory allocation
     volumes:
       - ./data:/data
+      - ./mods:/mods
