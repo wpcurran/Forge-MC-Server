@@ -5,7 +5,8 @@ data/*
 !data/server.properties
 
 # Ignore mods as this will be replicated for the modpacks being used
-mods/
+mods/*
+!mods/.gitkeep
 
 # Ignore logs (if you later map a logs volume)
 logs/
