@@ -1,15 +1,15 @@
-version: "3.8"
+ersion: "3.8"
 
 services:
   forge-minecraft:
     image: itzg/minecraft-server:latest
     ports:
-      - "127.0.0.1:443:25565" # using tailscale config (see README) | adjust port mapping accordingly if using multiple servers
+      - ":25565:25565" # using tailscale config (see README) | adjust port mapping accordingly if using multiple servers
     environment:
       EULA: "TRUE"
       TYPE: "FORGE" # adjust the mod type
       VERSION: "1.20.1"  # adjust to match your mods
-      FORGE_VERSION: "47.1.0"  # optional, can auto-detect from VERSION
+      FORGE_VERSION: "47.4.1"  # optional, can auto-detect from VERSION
       MEMORY: "8G" # adjust the memory allocation
     volumes:
       - ./data:/data
