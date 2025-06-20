@@ -4,7 +4,7 @@ services:
   forge-minecraft:
     image: itzg/minecraft-server:latest
     ports:
-      - "25566:25565" # adjust port mapping accordingly if using multiple servers
+      - "127.0.0.1:25566:25565" # using tailscale config (see README) | adjust port mapping accordingly if using multiple servers
     environment:
       EULA: "TRUE"
       TYPE: "FORGE" # adjust the mod type
