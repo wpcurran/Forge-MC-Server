@@ -43,3 +43,4 @@ Tracks empty folders (e.g. mods/) using .gitkeep
 Avoids bloating Git with .jar or runtime data using .gitignore
 
 Keeps modded servers and vanilla setups in one cohesive, flexible structure
+
